@@ -1,16 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 .App {
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+header {
+  padding: 20px;
+}
+#display {
+  background-color: #F4F4F4;
+  border-style: solid;
+  border-color: gray;
+  border-width: 2px 2px 0px 2px;
+  font-size: 25px;
+  text-shadow: 0.5px 0.5px gray;
+  height: 1.5em;
+  width: 200px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:scroll;
+}
+button {
+  background: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  border: solid 1px gray;
+  border-collapse: collapse;
+}
 #buttons {
+  background-color: #F4F4F4;
+  border: solid 1px gray;
+  margin-top: 0px;
    display: flex;
    justify-content: center;
-   flex-direction: row;
+   flex-direction: row-reverse;
    flex-wrap: wrap;
    width: 200px;
-   height: 200px;
+   height: 250px;
  }
 
 .number, .operator, .clear, .equals,.decimal {
@@ -18,5 +49,10 @@
   height: 50px;
 }
 .equals {
-  flex-grow: 2;
+  flex-grow: 4;
+  background-color: #F4F4F4
+}
+
+.operator {
+  text-shadow: 0.5px 0.5px gray;
 }

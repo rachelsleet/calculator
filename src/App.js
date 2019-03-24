@@ -2,45 +2,14 @@ import React from 'react';
 import './App.css';
 
 const buttons = [
-
   {
-    "id":"zero",
-    "display":"0",
-    "type":"number"
+    "id":"divide",
+    "display":"/",
+    "type":"operator"
   },
   {
-    "id":"one",
-    "display":"1",
-    "type":"number"
-  },
-  {
-    "id":"two",
-    "display":"2",
-    "type":"number"
-  },
-  {
-    "id":"three",
-    "display":"3",
-    "type":"number"
-  },
-  {
-    "id":"four",
-    "display":"4",
-    "type":"number"
-  },
-  {
-    "id":"five",
-    "display":"5",
-    "type":"number"
-  },
-  {
-    "id":"six",
-    "display":"6",
-    "type":"number"
-  },
-  {
-    "id":"seven",
-    "display":"7",
+    "id":"nine",
+    "display":"9",
     "type":"number"
   },
   {
@@ -49,14 +18,30 @@ const buttons = [
     "type":"number"
   },
   {
-    "id":"nine",
-    "display":"9",
+    "id":"seven",
+    "display":"7",
     "type":"number"
   },
   {
-    "id":"divide",
-    "display":"/",
+    "id":"multiply",
+    "display":"x",
     "type":"operator"
+  },
+  {
+    "id":"six",
+    "display":"6",
+    "type":"number"
+  },
+
+  {
+    "id":"five",
+    "display":"5",
+    "type":"number"
+  },
+  {
+    "id":"four",
+    "display":"4",
+    "type":"number"
   },
   {
     "id":"subtract",
@@ -64,13 +49,24 @@ const buttons = [
     "type":"operator"
   },
   {
-    "id":"add",
-    "display":"+",
-    "type":"operator"
+    "id":"three",
+    "display":"3",
+    "type":"number"
   },
   {
-    "id":"multiply",
-    "display":"x",
+    "id":"two",
+    "display":"2",
+    "type":"number"
+  },
+  {
+    "id":"one",
+    "display":"1",
+    "type":"number"
+  },
+
+  {
+    "id":"add",
+    "display":"+",
     "type":"operator"
   },
   {
@@ -83,6 +79,12 @@ const buttons = [
     "display":"AC",
     "type":"clear"
   },
+  {
+    "id":"zero",
+    "display":"0",
+    "type":"number"
+  },
+
   {
     "id":"equals",
     "display":"=",
@@ -215,7 +217,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          Calculator
+          Give your brain a break...
         </header>
         <Display message={this.state.currentDisplay}/>
         <div id="buttons">

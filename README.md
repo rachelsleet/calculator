@@ -6,7 +6,14 @@ This app is a calculator. I've decided to opt for formulaic calculation (calcula
 
 The app will render 10 stateless components (Number components) from 0 - 9 and operators. These will have an onClick listener and import the 'registerInput' function from the app component.
 
-Each time a number/+-x/ button is pressed, the App state 'currentFormula' is updated (input is concatenated on the end). This 'currentFormula' is also a prop for the Display component. 
+Each time a number/+-x/ button is pressed, the App state 'currentFormula' is updated (input is concatenated on the end). This 'currentFormula' is also a prop for the Display component.
+
+To do:
+- remove 'currentFormula' as state, instead replace 'x' with '\*' at evaluate time
+- break out 'registerInput' function to smaller, more readable functions
+- add comments!
+- consider restructuring data so that 'innerHTML' = 'x' statements not needed - currently too much hidden logic
+- any other ideas to streamline code/speed up test execution time
 
 ## Available Scripts
 
