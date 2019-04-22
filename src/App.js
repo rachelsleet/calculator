@@ -120,6 +120,7 @@ class App extends React.Component {
     }
   }
   evaluateFormula(formula) {
+    // eslint-disable-next-line
     return Function('"use strict";return (' + formula + ')')();
   }
   registerInput(e) {
@@ -152,8 +153,8 @@ class App extends React.Component {
 
         if (this.state.currentFormula.toString().match(/[*/+-]$/)){
           console.log('operator already selected');
-          var oldDisplay = oldDisplay.slice(0,-1);
-          var oldFormula =  oldFormula.slice(0,-1);
+          oldDisplay = oldDisplay.slice(0,-1);
+          oldFormula =  oldFormula.slice(0,-1);
         }
         if (e.target.innerHTML === "x") {
           this.setState({
